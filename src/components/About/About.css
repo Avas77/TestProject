@@ -1,0 +1,9 @@
+.about {
+  height: 100vh;
+}
+.about a {
+  color: #000000;
+}
+.about h1 {
+  font-size: 4rem;
+}
