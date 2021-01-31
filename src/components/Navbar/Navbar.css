@@ -1,0 +1,26 @@
+.navbar {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #ffffff;
+}
+.navbar span {
+  font-weight: 700;
+}
+.navbar span:first-child {
+  margin-left: 35px;
+}
+.navbar span:last-child {
+  margin-right: 35px;
+}
+.navbar__brand {
+  letter-spacing: 0.3em;
+  color: #000000;
+  font-weight: 700;
+}

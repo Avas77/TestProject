@@ -1,16 +1,23 @@
 import React from "react";
 import "./About.css";
+import Navbar from "../Navbar/Navbar";
+import Sidebar from "../Sidebar/Sidebar";
 
 const About = () => {
   return (
     <div className="about">
-      <a href="/">Home</a>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur in
-        quam ipsum unde, alias quisquam cupiditate maxime iste excepturi
-        assumenda laudantium rerum ullam dicta! Ratione saepe blanditiis
-        temporibus dolor deleniti.
-      </h1>
+      <Navbar />
+      <Sidebar />
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, ab.
+        Nostrum doloribus vel cupiditate mollitia, optio neque! Accusamus,
+        tempora? Reprehenderit excepturi iure unde eligendi quod? Sit excepturi
+        blanditiis enim expedita. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Modi, expedita? Nisi et, atque iusto porro id
+        consequuntur. Ex ratione aut repellat sint animi porro, quisquam
+        consectetur sed pariatur consequuntur nihil, omnis, sit voluptatum.
+        Animi reiciendis error, maiores amet tenetur voluptatem!
+      </p>
     </div>
   );
 };

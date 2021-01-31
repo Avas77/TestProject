@@ -1,0 +1,22 @@
+.sidebar {
+  width: 220px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  height: calc(100vh - 60px);
+  position: fixed;
+  top: 60px;
+  left: 0;
+  z-index: 99;
+  background-color: #ffffff;
+}
+.sidebar ul {
+  padding: 2rem;
+  list-style: none;
+}
+.sidebar ul li {
+  padding: 1.4rem;
+}
+.sidebar ul li a {
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  color: #000000;
+}
