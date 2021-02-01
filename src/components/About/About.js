@@ -1,13 +1,11 @@
 import React from "react";
 import "./About.css";
-import Navbar from "../Navbar/Navbar";
-import Sidebar from "../Sidebar/Sidebar";
+import Toolbar from "../Toolbar/Toolbar";
 
 const About = () => {
   return (
     <div className="about">
-      <Navbar />
-      <Sidebar />
+      <Toolbar />
       <h1>About Us</h1>
       <section className="info">
         <div className="first">

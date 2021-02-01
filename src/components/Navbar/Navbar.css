@@ -9,6 +9,7 @@
   width: 100%;
   z-index: 999;
   background-color: #ffffff;
+  transition: display 2s ease-in-out;
 }
 .navbar span {
   font-weight: 700;
@@ -23,4 +24,10 @@
   letter-spacing: 0.3em;
   color: #000000;
   font-weight: 700;
+}
+.navbar span i {
+  margin-right: 10px;
+}
+.menu-toggle {
+  cursor: pointer;
 }

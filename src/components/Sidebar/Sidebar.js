@@ -1,30 +1,28 @@
 import React from "react";
 import "./Sidebar.css";
-import Slide from "react-reveal/Slide";
+import { Link } from "react-router-dom";
 
-const Sidebar = () => {
+const Sidebar = (props) => {
   return (
-    <Slide left>
-      <nav className="sidebar">
-        <ul>
-          <li>
-            <a href="/about">About Us</a>
-          </li>
-          <li>
-            <a href="/link1">Link 1</a>
-          </li>
-          <li>
-            <a href="/link2">Link 2</a>
-          </li>
-          <li>
-            <a href="/link3">Link 3</a>
-          </li>
-          <li>
-            <a href="/link4">Link 4</a>
-          </li>
-        </ul>
-      </nav>
-    </Slide>
+    <nav className={`sidebar clearfix ${props.show ? "open" : "close"}`}>
+      <ul>
+        <li>
+          <Link to="/about">About Us</Link>
+        </li>
+        <li>
+          <Link to="/link1">Link 1</Link>
+        </li>
+        <li>
+          <Link to="/link2">Link 2</Link>
+        </li>
+        <li>
+          <Link to="/link3">Link 3</Link>
+        </li>
+        <li>
+          <Link to="/link4">Link 4</Link>
+        </li>
+      </ul>
+    </nav>
   );
 };
 

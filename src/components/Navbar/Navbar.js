@@ -2,15 +2,19 @@ import React from "react";
 import "./Navbar.css";
 import Slide from "react-reveal/Slide";
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <Slide top>
       <div className="navbar">
-        <span>Menu</span>
+        <span onClick={props.clicked} className="menu-toggle">
+          <i class="fas fa-bars"></i>Menu
+        </span>
         <a className="navbar__brand" href="/">
           TEST PROJECT
         </a>
-        <span>Search</span>
+        <span>
+          <i class="fas fa-search"></i>Search
+        </span>
       </div>
     </Slide>
   );
