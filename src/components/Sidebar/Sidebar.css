@@ -12,6 +12,7 @@
 .sidebar ul {
   padding: 2rem;
   list-style: none;
+  height: 100%;
 }
 .sidebar ul li {
   padding: 1.4rem;

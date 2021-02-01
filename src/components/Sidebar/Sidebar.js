@@ -8,19 +8,19 @@ const Sidebar = () => {
       <nav className="sidebar">
         <ul>
           <li>
-            <a href="">About Us</a>
+            <a href="/about">About Us</a>
           </li>
           <li>
-            <a href="">Link 1</a>
+            <a href="/link1">Link 1</a>
           </li>
           <li>
-            <a href="">Link 2</a>
+            <a href="/link2">Link 2</a>
           </li>
           <li>
-            <a href="">Link 3</a>
+            <a href="/link3">Link 3</a>
           </li>
           <li>
-            <a href="">Link 4</a>
+            <a href="/link4">Link 4</a>
           </li>
         </ul>
       </nav>

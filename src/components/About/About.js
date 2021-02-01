@@ -8,15 +8,41 @@ const About = () => {
     <div className="about">
       <Navbar />
       <Sidebar />
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, ab.
-        Nostrum doloribus vel cupiditate mollitia, optio neque! Accusamus,
-        tempora? Reprehenderit excepturi iure unde eligendi quod? Sit excepturi
-        blanditiis enim expedita. Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Modi, expedita? Nisi et, atque iusto porro id
-        consequuntur. Ex ratione aut repellat sint animi porro, quisquam
-        consectetur sed pariatur consequuntur nihil, omnis, sit voluptatum.
-        Animi reiciendis error, maiores amet tenetur voluptatem!
+      <h1>About Us</h1>
+      <section className="info">
+        <div className="first">
+          <span className="highlighted">2003</span>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+            inventore quam omnis ab modi maiores ipsa animi quos eum libero,
+            vitae, ut et doloribus possimus tempora facilis maxime molestiae
+            nobis.
+          </p>
+        </div>
+        <div className="first">
+          <span className="highlighted">150+</span>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+            inventore quam omnis ab modi maiores ipsa animi quos eum libero,
+            vitae, ut et doloribus possimus tempora facilis maxime molestiae
+            nobis.
+          </p>
+        </div>
+        <div className="first">
+          <span className="highlighted">Service</span>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+            inventore quam omnis ab modi maiores ipsa animi quos eum libero,
+            vitae, ut et doloribus possimus tempora facilis maxime molestiae
+            nobis.
+          </p>
+        </div>
+      </section>
+      <p className="desc">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, nam
+        labore? Ad eaque magnam, placeat deleniti quae reiciendis hic corporis,
+        quisquam, architecto aliquid delectus eos modi incidunt quidem quo
+        excepturi.
       </p>
     </div>
   );
