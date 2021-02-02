@@ -1,10 +1,12 @@
-.home {
+/* .home {
   height: 100vh;
   background-image: url("../../assets/help.jpg");
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: overlay;
   position: relative;
+  animation: animate 10s ease-in infinite;
+  overflow: hidden;
 }
 .home__title {
   position: absolute;
@@ -24,4 +26,126 @@
   font-size: 1.1rem;
   transform: translateX(-50%);
   letter-spacing: 0.2em;
+}
+@keyframes animate {
+  0% {
+    background-image: url("../../assets/team.jpg");
+  }
+  50% {
+    background-image: url("../../assets/helping-hand.jpg");
+  }
+  100% {
+    background-image: url("../../assets/help.jpg");
+  }
+} */
+
+/* The outermost element*/
+.header-wrapper {
+  overflow: hidden;
+  height: 100vh;
+  text-align: center;
+}
+.home__title {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 0.3em;
+  font-size: 2.5rem;
+  z-index: 9999999;
+}
+.home__scroll {
+  color: #ffffff;
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  font-size: 1.1rem;
+  transform: translateX(-50%);
+  letter-spacing: 0.2em;
+  z-index: 9999999;
+}
+.zoominheader {
+  height: 100vh;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  background-size: cover;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-animation: zoomin 10s ease-in infinite;
+  animation: zoomin 10s ease-in infinite;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+/* The innermost element*/
+.zoomoutheader {
+  height: 100vh;
+  text-align: center;
+  background: none;
+  -webkit-animation: zoomout 10s ease-in infinite;
+  animation: zoomout 10s ease-in infinite;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+/* Zoom in Keyframes */
+@-webkit-keyframes zoomin {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes zoomin {
+  0% {
+    background-image: url("../../assets/help.jpg");
+    transform: scale(1);
+  }
+  50% {
+    background-image: url("../../assets/new.jpg");
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+    background-image: url("../../assets/team.jpg");
+  }
+} /*End of Zoom in Keyframes */
+
+/* Zoom out Keyframes */
+@-webkit-keyframes zoomout {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes zoomout {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.67);
+  }
+  100% {
+    transform: scale(1);
+  }
+} /*End of Zoom out Keyframes */
+
+/*Style for the text*/
+.text {
+  color: red;
+  font-weight: bold;
 }

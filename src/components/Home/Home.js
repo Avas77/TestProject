@@ -5,14 +5,24 @@ import Zoom from "react-reveal/Zoom";
 
 const Home = () => {
   return (
-    <section className="home">
-      <h1 className="home__title">
-        <Zoom delay={1000}>TEST PROJECT</Zoom>
-      </h1>
+    // <section className="home">
+    //   <div class="zoomoutheader">
+    //     <h1 className="home__title">TEST PROJECT</h1>
+    //     <Link className="home__scroll" to="/about">
+    //       scroll
+    //     </Link>
+    //   </div>
+    // </section>
+
+    <div class="header-wrapper">
+      <h1 class="home__title">TEST PROJECT</h1>
       <Link className="home__scroll" to="/about">
         scroll
       </Link>
-    </section>
+      <div class="zoominheader">
+        <div class="zoomoutheader"></div>
+      </div>
+    </div>
   );
 };
 

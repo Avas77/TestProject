@@ -1,6 +1,7 @@
 import React from "react";
 import "./Sidebar.css";
 import { Link } from "react-router-dom";
+import Slide from "react-reveal/Slide";
 
 const Sidebar = (props) => {
   return (
