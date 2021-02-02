@@ -13,7 +13,7 @@ const Navbar = (props) => {
           TEST PROJECT
         </a>
         <span>
-          <i class="fas fa-search"></i>Search
+          <i class="fas fa-search search-icon"></i>Search
         </span>
       </div>
     </Slide>
