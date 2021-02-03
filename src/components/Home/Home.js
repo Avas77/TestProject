@@ -1,18 +1,23 @@
-import React from "react";
+import React, {Component} from "react";
 import "./Home.css";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useHistory} from "react-router-dom";
 import Fade from "react-reveal/Fade";
 
-const Home = () => {
-  const history = useHistory();
-
-  const myFunction = () => {
-    console.log("hello");
-    history.push("/about");
-  };
-
-  return (
-    <div class="header-wrapper" onScroll={myFunction}>
+class Home extends Component{
+ componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll)
+}
+componentWillUnmount() {
+   window.removeEventListener('scroll', this.handleScroll);
+}
+handleScroll = () => {
+  if(document.body.scrollTop > 60 || document.documentElement.scrollTop > 60){
+    this.props.history.push("/about");
+  }
+}
+  render(){
+    return (
+    <div class="header-wrapper" id="myDIV">
       <h1 class="home__title">
         <Fade left delay={1000}>
           <span>T</span>
@@ -56,6 +61,7 @@ const Home = () => {
       </div>
     </div>
   );
+  }
 };
 
 export default Home;
